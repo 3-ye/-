@@ -1,26 +1,31 @@
-.mui-bar-nav{
+.mui-bar-nav {
 	background-color: #5e6c86;
 	border: none;
 	box-shadow: none;
 }
-.mui-title{
+
+.mui-title {
 	color: white;
 }
-.css1{
+
+.css1 {
 	border: 3px solid white;
 	display: flex;
 	flex-wrap: wrap;
 	width: 95%;
 	margin: 10px 2.5%;
 }
-.mui-content{
+
+.mui-content {
 	background-color: #5e6c86;
 	height: 100vh;
 }
-.css1{
+
+.css1 {
 	border: 3px solid white;
 }
-.css2{
+
+.css2 {
 	width: 20%;
 	border-left: 3px solid white;
 	border-bottom: 3px solid white;
@@ -30,6 +35,15 @@
 	padding: 10px;
 	color: white;
 }
-img{
+
+img {
 	width: 100%;
+}
+
+.mui-bar-tab {
+	background-color: #38445a;
+}
+
+.mui-bar-tab .mui-tab-item {
+	color: white;
 }

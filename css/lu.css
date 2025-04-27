@@ -13,3 +13,10 @@
 img{
 	width: 100%;
 }
+.mui-bar-tab {
+	background-color: #38445a;
+}
+
+.mui-bar-tab .mui-tab-item {
+	color: white;
+}

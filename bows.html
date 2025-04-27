@@ -54,6 +54,20 @@
 			<h3>提示：SOC,过高或过低都将降低电池健康度，减少电池使用寿命。</h3>
 			<button type="button" class="mui-btn mui-btn-blue mui-btn-block">紧急关闭储能电池输出</button>
 		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item " onclick="photo()" id="photo" href="photo.html">
+				<span class="mui-tab-label">储能</span>
+			</a>
+			<a class="mui-tab-item mui-active" id="bows" onclick="bows()"   href="bows.html">
+				<span class="mui-tab-label">BMS</span>
+			</a>
+			<a class="mui-tab-item" id="lu" onclick="lu()"   href="lu.html">
+				<span class="mui-tab-label">监控曲线</span>
+			</a>
+			<a class="mui-tab-item " id="steel" onclick="steel()"  href="steel.html">
+				<span class="mui-tab-label">状态图</span>
+			</a>
+		</nav>
 		<script src="js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init()
@@ -82,6 +96,18 @@
 					document.querySelector('.mui-btn-block').style.display = 'block'
 				}
 			})
+			function photo(){
+				window.location.href = 'index.html'
+			}
+			function bows(){
+				window.location.href = 'bows.html'
+			}
+			function lu(){
+				window.location.href = 'lu.html'
+			}
+			function steel(){
+				window.location.href = 'steel.html'
+			}
 		</script>
 	</body>
 

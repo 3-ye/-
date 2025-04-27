@@ -16,9 +16,35 @@
 		<div class="mui-content">
 			<img src="images/quxian.png" >
 		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item " onclick="photo()" id="photo" href="photo.html">
+				<span class="mui-tab-label">储能</span>
+			</a>
+			<a class="mui-tab-item" id="bows" onclick="bows()"   href="bows.html">
+				<span class="mui-tab-label">BMS</span>
+			</a>
+			<a class="mui-tab-item mui-active" id="lu" onclick="lu()"   href="lu.html">
+				<span class="mui-tab-label">监控曲线</span>
+			</a>
+			<a class="mui-tab-item " id="steel" onclick="steel()"  href="steel.html">
+				<span class="mui-tab-label">状态图</span>
+			</a>
+		</nav>
 		<script src="js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init()
+			function photo(){
+				window.location.href = 'index.html'
+			}
+			function bows(){
+				window.location.href = 'bows.html'
+			}
+			function lu(){
+				window.location.href = 'lu.html'
+			}
+			function steel(){
+				window.location.href = 'steel.html'
+			}
 		</script>
 	</body>
 
