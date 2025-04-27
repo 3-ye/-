@@ -1,0 +1,15 @@
+.mui-bar-nav{
+	background-color: #5e6c86;
+	border: none;
+	box-shadow: none;
+}
+.mui-title{
+	color: white;
+}
+.mui-content{
+	background-color: #5e6c86;
+	height: 100vh;
+}
+img{
+	width: 100%;
+}

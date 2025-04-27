@@ -1,0 +1,70 @@
+body{
+	height: 100vh;
+	background-color: #5e6c86;
+}
+.mui-bar-nav{
+	background-color: #5e6c86;
+	border: none;
+	box-shadow: none;
+}
+.mui-title{
+	color: white;
+}
+.css1{
+	width: 60%;
+}
+.css2{
+	width: 50%;
+}
+.css2:nth-child(2n - 1) {
+	border-left: none;
+}
+.css2:nth-child(5) {
+	border-bottom: none;
+}
+.css2:nth-child(6) {
+	border-bottom: none;
+}
+.css3{
+	width: 30%;
+}
+.flex{
+	display: flex;
+}
+.css3{
+	width: 40%;
+}
+.css3 input{
+	width: 50%;
+	height: 40px;
+}
+.css3 button{
+	margin-left: 10px;
+	height: 40px;
+}
+.css3-1{
+	display: flex;
+}
+h3{
+	color: white;
+	margin: 10px;
+	font-size: 16px;
+}
+.css3 h2{
+	font-size: 20px;
+}
+.lgreen{
+	color: lawngreen;
+}
+.red{
+	color: red;
+	display: none;
+}
+.mui-btn-block{
+	width: 95%;
+	margin: 20px 2.5%;
+	background-color: white;
+	border-color: #000000;
+	color: red;
+	display: none;
+}

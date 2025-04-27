@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>BMS监控系统</title>
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/photo.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bow.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">BMS监控系统</h1>
+		</header>
+		<div class="mui-content">
+			<div class="flex">
+				<div class="css1">
+					<div class="css2">
+						类型
+					</div>
+					<div class="css2">
+						SOC
+					</div>
+					<div class="css2">
+						过高判定值
+					</div>
+					<div class="css2 heightone">
+						90.00%
+					</div>
+					<div class="css2">
+						过低判定值
+					</div>
+					<div class="css2 lowone">
+						10.00%
+					</div>
+				</div>
+				
+				<div class="css3">
+					<h2 class="lgreen">电池正常</h2>
+					<h2 class="red">SOC司1号的t国静!翀川企业言存成条吉立即街开信能-KM3丰利用储能柜充电</h2>
+					<div class="css3-1">
+						<input type="text" name="" id="height" value="" />
+						<button type="button" class="height">确定</button>
+					</div>
+					<div class="css3-1">
+						<input type="text" name="" id="low" value="" />
+						<button type="button" class="low">确定</button>
+					</div>
+				</div>
+			</div>
+			<h3>提示：SOC,过高或过低都将降低电池健康度，减少电池使用寿命。</h3>
+			<button type="button" class="mui-btn mui-btn-blue mui-btn-block">紧急关闭储能电池输出</button>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			document.querySelector('.height').addEventListener('click', function() {
+				let number = document.getElementById('height').value
+				if(number > 100 || number < 0) {
+					mui.toast('超过范围')
+				} else{
+					localStorage.setItem('height', number)
+					document.querySelector('.heightone').innerText = number + '.00%'
+					document.getElementById('height').value = ''
+				}
+				
+			})
+			document.querySelector('.low').addEventListener('click', function() {
+				let number = document.getElementById('low').value
+				if(number > 100 || number < 0) {
+					mui.toast('超过范围')
+				} else {
+					localStorage.setItem('low',number)
+					document.querySelector('.lowone').innerText = document.getElementById('low').value + '.00%'
+					document.getElementById('low').value = ''
+					document.querySelector('.lgreen').style.display = 'none'
+					document.querySelector('.red').style.display = 'block'
+					document.querySelector('.mui-btn-block').style.display = 'none'
+					document.querySelector('.mui-btn-block').style.display = 'block'
+				}
+			})
+		</script>
+	</body>
+
+</html>
